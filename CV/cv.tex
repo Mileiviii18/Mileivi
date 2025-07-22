@@ -1,0 +1,197 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=1cm, bmargin=1cm, lmargin=2cm, rmargin=2cm]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+
+% Predefined colors
+\usepackage{xcolor}
+\definecolor{bgleftcol}{HTML}{01303f}
+\definecolor{headercolor}{HTML}{02577a}
+\definecolor{iconcolor}{HTML}{02577a}
+\definecolor{lightbg}{HTML}{f8f9fa}
+
+% URL
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=headercolor,
+    urlcolor=headercolor,
+    citecolor=headercolor
+}
+
+% Do not indent paragraphs
+\setlength{\parindent}{0pt}
+
+% Section and subsection styles
+\usepackage{titlesec}
+\titleformat{\section}%
+    {\normalfont\huge\bfseries\color{headercolor}}%
+    {\thesection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.8pt]}\vspace{0.3cm}]
+
+\titleformat{\subsection}%
+    {\normalfont\Large\bfseries\color{headercolor}}%
+    {\thesubsection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.5pt]}\vspace{0.2cm}]
+
+\titleformat{\subsubsection}%
+    {\normalfont\large\bfseries\color{headercolor}}%
+    {\thesubsubsection}{1em}{}%
+
+% Job entry
+\newcommand{\jobentry}[3]{
+    {\Large\bfseries #1}
+    %
+    \hfill
+    %
+    #2
+    %
+    \vspace{0.2cm} \\
+}
+
+\newcommand{\projectentry}[2]{
+    {\large\bfseries #1 \hfill #2} \\ \vspace{-0.5cm}
+}
+
+% Skill entry for inline skills
+\newcommand{\skillentry}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
+}
+
+% Contact info command
+\newcommand{\contactinfo}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
+}
+
+% Icons
+\usepackage[fixed]{fontawesome5}
+
+% Sensitive information
+\input{private/private-information.tex}
+\def\myname{Mileivi Zharick Esperanza Lombana Bohórquez}
+
+\pagestyle{empty}
+\begin{document}
+
+% Header section
+\begin{center}
+    {\Huge\bfseries\color{headercolor}\myname}
+
+    \vspace{0.3cm}
+
+    {\Large Junior Software Engineer}
+
+    \vspace{0.5cm}
+
+    % Contact information in a single line
+    \contactinfo{\faPhone}{\myphone}
+    \contactinfo{\faAt}{\myemail}
+    \contactinfo{\faGithub}{\href{https://github.com/Mileiviii18}{Mileiviii18}}
+    {\large\color{iconcolor}\faHome} \myhome
+\end{center}
+
+% Professional summary
+\colorbox{lightbg}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+\vspace{0.3cm}
+    Junior QA Engineer with hands-on experience in automated testing and software 
+    quality assurance across different environments: frontend, backend, APIs, and mobile 
+    applications.
+    Holds a degree in Software Analysis and Development, with a solid technical 
+    background and experience using Selenium and Python for test automation, as well as 
+    manual API testing with tools like Insomnia.
+    Has contributed to projects involving validations for web interfaces, service endpoints, 
+    and mobile apps, applying testing methodologies to ensure stable functionality and a 
+    strong user experience.
+    Known for a proactive attitude, strong organizational skills, and teamwork, with a 
+    clear goal to keep growing as a QA Automation Engineer and bring value to agile and 
+    collaborative development environments.
+\vspace{0.3cm}
+}}
+
+\section*{Recent Experience}
+
+\jobentry{Junior QA Engineer at Microsoft}{Jan 2025 -- July 2025}
+
+\begin{tabular}{l m{15.7cm}}
+    {\large\color{iconcolor}\faBug} & Performed comprehensive testing of frontend 
+    and backend components to ensure alignment with product requirements and wireframes. \\[0.5cm]
+
+    {\large\color{iconcolor}\faEye} & Reviewed UI/UX elements for consistency, 
+    usability, and compliance with design specifications, identifying and 
+    reporting visual and functional issues. \\[0.5cm]
+
+    {\large\color{iconcolor}\faTasks} & Validated user stories (US) to ensure 
+    completeness and functional accuracy before release, working closely with 
+    developers and designers in agile environments. \\[0.5cm]
+
+    {\large\color{iconcolor}\faCheckCircle} & Contributed to the delivery of 
+    high-quality software by executing manual tests, documenting results, and 
+    verifying fixes across various platforms.
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{flushright}
+%
+    \small Full work history available at
+    \href{https://www.linkedin.com/in/mile1817/}{\faLinkedin Mileivi-QA}
+    %
+    \end{flushright}
+
+\vfill
+\subsection*{Key Projects}
+
+\projectentry{Juna – Chat Violence Detection Web App}{Microsoft (Social Project)}
+
+\begin{itemize}
+    \item Collaborated on a web application that detects types of violence 
+    in WhatsApp chats using AI. The system processed uploaded chat `.txt` files, 
+    cleaned and preprocessed data in the backend, and returned predictions based on trained AI models.
+    
+    \item Executed functional and non-functional testing across the entire system — including 
+    frontend, backend; API endpoints — validating data flow, UI behavior, and system responses.
+
+    \item Wrote and executed automated tests using \texttt{Selenium} and \texttt{Python}, 
+    simulating user interactions in Microsoft Edge to validate front-end behavior. Also created 
+    scripts to verify UI content and consistency.
+
+    \item Performed manual API testing with \texttt{Insomnia}, validating backend responses 
+    (201, 400, 500) for multiple file types and endpoint scenarios both locally and in deployment.
+
+    \item Documented manual test cases in GitHub, detailing steps, expected outcomes, actual results, 
+    and including screenshots for failure analysis based on user stories and acceptance criteria.
+
+    \item Supported unit test debugging in the frontend, contributing to bug 
+    identification that affected component behavior and integration.
+
+    \item Participated in Scrum sprints, reviewing user stories, leading daily meetings 
+    in the absence of PM/POs, and helping coordinate development and QA priorities within the team.
+\end{itemize}
+
+\section*{Technical Skills}
+%
+\begin{tabular}{l m{13.2cm}}
+%
+{\large\color{iconcolor}\faPython} \textbf{Python} & Data processing, automation 
+scripting, and UI test automation using Selenium \\[0.2cm]
+%
+{\large\color{iconcolor}\faBug} \textbf{Testing} & Functional and non-functional 
+testing. Manual API testing with Insomnia. Automated UI tests with Selenium \\[0.2cm]
+%
+{\large\color{iconcolor}\faLaptopCode} \textbf{QA & Automation} & Test case documentation, 
+user story validation, debugging unit tests, and verifying UI consistency \\[0.2cm]
+%
+{\large\color{iconcolor}\faUsers} \textbf{Agile Methodologies} & Scrum participation: 
+sprint reviews, daily meetings, and team coordination in absence of PM/PO \\[0.2cm]
+%
+{\large\color{iconcolor}\faGithub} \textbf{Version Control} & Test documentation and 
+collaboration using GitHub
+%
+\end{tabular}
+
+\section*{Education}
+
+Software analysis and development, Sena - Diseño y Metrología (2017 - 2021)
+
+\end{document}
