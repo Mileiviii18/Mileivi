@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  23 JUL 2025 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.22)  24 JUL 2025 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,29 +373,35 @@ nput line 96.
 (C:\Users\t-mileivil\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesome
 free1.fd)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 115.
+(Font)              <10.95> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 115.
+(Font)              <8> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 115.
+(Font)              <6> on input line 111.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 129.
+nput line 118.
 
 (C:\Users\t-mileivil\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesome
 free3.fd)
-Overfull \hbox (5.01132pt too wide) in paragraph at lines 120--137
-[] 
- []
-
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 143.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-53.
-(C:\Users\t-mileivil\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
+n input line 142.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
+ input line 152.
+
+(C:\Users\t-mileivil\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesome
+brands1.fd)
+LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <12> not 
+available
+(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
+n input line 152.
+
+Overfull \hbox (9.8591pt too wide) in paragraph at lines 150--168
+[] 
+ []
+
+
 
 [1
 
@@ -406,24 +412,7 @@ g/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}{C:/Users/t-mileivil/AppData
 AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{C:/Users/t-
 mileivil/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}{C:/U
 sers/t-mileivil/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free3.en
-c}]
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 182.
-
-(C:\Users\t-mileivil\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesome
-brands1.fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <12> not 
-available
-(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 182.
-
-Overfull \hbox (9.8591pt too wide) in paragraph at lines 180--198
-[] 
- []
-
-
-
-[2{C:/Users/t-mileivil/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5b
+c}{C:/Users/t-mileivil/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5b
 rands1.enc}]
 (C:\Users\t-mileivil\OneDrive - Microsoft\Documentos\GitHub\Mileivi\build\cv.au
 x)
@@ -435,13 +424,13 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13078 strings out of 468149
- 225442 string characters out of 5441134
+ 13038 strings out of 468149
+ 224821 string characters out of 5441134
  636748 words of memory out of 5000000
- 41527 multiletter control sequences out of 15000+600000
- 647420 words of font info for 77 fonts, out of 8000000 for 9000
+ 41493 multiletter control sequences out of 15000+600000
+ 645474 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,346b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,346b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/t-mileivil/AppData/Roaming/MiKTeX/fonts/type1/public/fontawesome5/F
 ontAwesome5Brands-Regular.pfb><C:/Users/t-mileivil/AppData/Roaming/MiKTeX/fonts
 /type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Program Files/MiKTeX/
@@ -449,9 +438,9 @@ fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8
 a.pfb>
 Output written on "C:\Users\t-mileivil\OneDrive - Microsoft\Documentos\GitHub\M
-ileivi\build\cv.pdf" (2 pages, 94329 bytes).
+ileivi\build\cv.pdf" (1 page, 91428 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
