@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=1cm, bmargin=1cm, lmargin=2cm, rmargin=2cm]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+
+% Fuente Arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colores predefinidos
+\usepackage{xcolor}
+\definecolor{bgleftcol}{HTML}{7D5A9C}
+\definecolor{headercolor}{HTML}{7D5A9C}
+\definecolor{iconcolor}{HTML}{7D5A9C}
+\definecolor{lightbg}{HTML}{f8f9fa}
+
+% Enlaces
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=headercolor,
+    urlcolor=headercolor,
+    citecolor=headercolor
+}
+
+% No indentar párrafos
+\setlength{\parindent}{0pt}
+
+% Estilos para secciones
+\usepackage{titlesec}
+\titleformat{\section}%
+    {\normalfont\huge\bfseries\color{headercolor}}%
+    {\thesection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.8pt]}\vspace{0.3cm}]
+
+\titleformat{\subsection}%
+    {\normalfont\Large\bfseries\color{headercolor}}%
+    {\thesubsection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.5pt]}\vspace{0.2cm}]
+
+\titleformat{\subsubsection}%
+    {\normalfont\large\bfseries\color{headercolor}}%
+    {\thesubsubsection}{1em}{}%
+
+% Entrada de trabajo
+\newcommand{\jobentry}[3]{
+    {\Large\bfseries #1}
+    \hfill
+    #2
+    \vspace{0.2cm} \\
+}
+
+\newcommand{\projectentry}[2]{
+    {\large\bfseries #1 \hfill #2} \\ \vspace{-0.5cm}
+}
+
+\newcommand{\skillentry}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
+}
+
+\newcommand{\contactinfo}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
+}
+
+% Íconos
+\usepackage[fixed]{fontawesome5}
+
+% Información sensible
+\input{private/private-information.tex}
+\def\myname{Mileivi Zharick Esperanza Lombana Bohórquez}
+
+\pagestyle{empty}
+\begin{document}
+
+% Encabezado
+\begin{center}
+    {\Huge\bfseries\color{headercolor}\myname}
+
+    \vspace{0.3cm}
+
+    {\Large Técnologo en Desarrollo de Software - Junior}
+
+    \vspace{0.5cm}
+
+    % Información de contacto en una línea
+    \contactinfo{\faPhone}{\myphone}
+    \contactinfo{\faAt}{\myemail}
+    \contactinfo{\faGithub}{\href{https://github.com/Mileiviii18}{Mileiviii18}}
+    {\large\color{iconcolor}\faHome} \myhome
+\end{center}
+
+% Resumen profesional
+\colorbox{lightbg}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+\vspace{0.2cm}
+Ingeniera de QA Junior orientada al detalle con experiencia comprobada en pruebas de software manuales y automatizadas en plataformas web, API y móviles. 
+Con habilidades en Python, Selenium e Insomnia para la automatización de pruebas y validación de APIs. 
+Sólida formación en análisis de software, documentación de casos de prueba y depuración. 
+Capaz de colaborar eficazmente en equipos ágiles/Scrum para entregar soluciones centradas en el usuario y de alta calidad. 
+Apasionada por el aprendizaje continuo y por avanzar como Ingeniera de Automatización QA. 
+En busca de oportunidades para contribuir en equipos de desarrollo innovadores y fomentar la calidad del software en entornos dinámicos.
+\vspace{0.1cm}
+}}
+
+\section*{Experiencia Reciente}
+
+\jobentry{Ingeniera de QA Junior en Microsoft}{Ene 2025 -- Jul 2025}
+
+\begin{tabular}{l m{15.5cm}}
+    {\large\color{iconcolor}\faTasks} & Validación de historias de usuario y realización de pruebas funcionales, de interfaz y de integración en plataformas web y móviles. \\[0.5cm]
+
+    {\large\color{iconcolor}\faCode} & Ejecución de pruebas automatizadas de interfaz de usuario con \texttt{Selenium} (Python), simulando el comportamiento del usuario en Microsoft Edge. \\[0.5cm]
+
+    {\large\color{iconcolor}\faEye} & Revisión de componentes frontend para verificar su precisión visual/funcional; colaboración con desarrolladores para la resolución de errores. \\[0.5cm]
+
+    {\large\color{iconcolor}\faCheckCircle} & Realización de pruebas manuales de APIs con \texttt{Insomnia}, validando respuestas REST. \\[0.5cm]
+
+    {\large\color{iconcolor}\faProjectDiagram} & Contribución en \textbf{Juna – Aplicación web de detección de violencia en chats}, una herramienta basada en IA para el análisis de archivos de texto. \\[0.5cm]
+
+    {\large\color{iconcolor}\faUsers} & Participación en sprints ágiles y coordinación de equipo para garantizar entregas puntuales.
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{flushright}
+    \small Historial laboral completo disponible en
+    \href{https://www.linkedin.com/in/mile1817/}{\faLinkedin Mileivi-QA}
+\end{flushright}
+
+\section*{Habilidades Técnicas}
+
+\begin{tabular}{l m{12cm}}
+%
+{\large\color{iconcolor}\faPython} \textbf{Python} & Procesamiento de datos, automatización de scripts y pruebas automatizadas de interfaz de usuario con Selenium. \\[0.4cm]
+%
+{\large\color{iconcolor}\faBug} \textbf{Pruebas} & Pruebas funcionales y no funcionales. Pruebas manuales de APIs con Insomnia. Pruebas automatizadas de interfaz con Selenium. \\[0.4cm]
+%
+{\large\color{iconcolor}\faLaptopCode} \textbf{QA y Automatización} & Documentación de casos de prueba, validación de historias de usuario, depuración de pruebas unitarias y verificación de consistencia de UI. \\[0.4cm]
+%
+{\large\color{iconcolor}\faUsers} \textbf{Metodologías Ágiles} & Participación en Scrum: revisiones de sprint, reuniones diarias y coordinación de equipo. \\[0.4cm]
+%
+{\large\color{iconcolor}\faGithub} \textbf{Control de Versiones} & Documentación de pruebas y colaboración usando GitHub.
+\end{tabular}
+
+\section*{Educación}
+
+\textbf{Análisis y Desarrollo de Software} \hfill SENA \hfill 2023–2025
+
+\end{document}
